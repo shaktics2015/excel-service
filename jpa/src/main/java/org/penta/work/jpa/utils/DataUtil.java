@@ -8,12 +8,11 @@ import java.util.Map;
 import static java.util.Map.entry;
 
 public class DataUtil {
+    private static DataUtil single_instance = null;
     public Map<Long, Account> accounts = Map.ofEntries(
             entry(1L, Account.builder().accountBalance(BigDecimal.valueOf(100000L)).accountNo(1L).build()),
             entry(2L, Account.builder().accountBalance(BigDecimal.valueOf(100L)).accountNo(1L).build())
     );
-
-    private static DataUtil single_instance = null;
 
     private DataUtil() {
     }

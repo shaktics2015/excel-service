@@ -9,7 +9,7 @@ public class WriteService implements Writer {
     @Override
     public void save(Account account) {
 
-        DataUtil dataUtil =  DataUtil.getInstance();
+        DataUtil dataUtil = DataUtil.getInstance();
         dataUtil.accounts.put(account.getAccountNo(), account);
     }
 }

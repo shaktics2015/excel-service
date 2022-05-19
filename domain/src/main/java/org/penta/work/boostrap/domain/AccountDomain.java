@@ -6,10 +6,12 @@ import org.penta.work.boostrap.port.RequestAccounts;
 import org.penta.work.boostrap.port.model.Account;
 
 import java.util.List;
+
 @Builder
 public class AccountDomain implements RequestAccounts {
 
     private ObtainAccounts obtainAccounts;
+
     public AccountDomain(ObtainAccounts obtainAccounts) {
         this.obtainAccounts = obtainAccounts;
     }

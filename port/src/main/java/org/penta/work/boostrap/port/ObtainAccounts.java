@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface ObtainAccounts {
     List<Account> getAccounts();
+
     Account getAccount(final long id);
 }

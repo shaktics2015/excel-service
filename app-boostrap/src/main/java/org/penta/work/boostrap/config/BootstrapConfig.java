@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Import;
 @Import(JpaConfig.class)
 public class BootstrapConfig {
     @Bean
-    public RequestAccounts getRequestAccounts(ObtainAccounts obtainAccounts){
+    public RequestAccounts getRequestAccounts(ObtainAccounts obtainAccounts) {
         return new AccountDomain(obtainAccounts);
     }
 

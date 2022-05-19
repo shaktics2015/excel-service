@@ -12,7 +12,7 @@ public class JpaConfig {
 //    AccountDao accountDao;
 
     @Bean
-    public ObtainAccounts getAccountRepository(){//AccountDao accountDao
+    public ObtainAccounts getAccountRepository() {//AccountDao accountDao
         return new AccountRepository();
     }
 }
