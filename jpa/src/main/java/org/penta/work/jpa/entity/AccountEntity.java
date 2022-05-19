@@ -5,9 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Table(name = "ACCOUNT")
 @Entity
@@ -17,8 +15,8 @@ import javax.persistence.Table;
 @DynamicUpdate
 public class AccountEntity {
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    @Column(name= "ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name= "ID")
     private Long id;
 
     private String name;

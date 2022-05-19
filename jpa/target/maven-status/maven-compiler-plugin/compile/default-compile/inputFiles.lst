@@ -1,7 +1,6 @@
-/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/write/WriteService.java
+/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/config/JpaConfig.java
 /Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/utils/DataUtil.java
-/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/dao/DealDao.java
-/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/DealRepository.java
-/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/config/JpaAdapterConfig.java
-/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/entity/DealEntity.java
-/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/read/ReadService.java
+/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/write/AccountWriteService.java
+/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/entity/AccountEntity.java
+/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/repository/AccountRepository.java
+/Users/shakti/java_apps/excel-service/jpa/src/main/java/org/penta/work/jpa/read/AccountReadService.java

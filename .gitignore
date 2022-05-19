@@ -158,4 +158,5 @@ buildNumber.properties
 
 # "temporary" build files
 /target
+/app-boostrap/target
 
