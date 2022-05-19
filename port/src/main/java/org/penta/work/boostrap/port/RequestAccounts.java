@@ -8,4 +8,5 @@ public interface RequestAccounts {
     List<Account> getAccounts();
 
     Account getAccount(final long id);
+    List<Account> getActiveAccounts();
 }

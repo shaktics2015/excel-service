@@ -2,6 +2,7 @@ package org.penta.work.jpa;
 
 import org.penta.work.boostrap.port.ObtainAccounts;
 import org.penta.work.boostrap.port.model.Account;
+import org.penta.work.jpa.dao.AccountDao;
 import org.penta.work.jpa.utils.DataUtil;
 
 import java.util.Collections;

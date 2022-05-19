@@ -26,4 +26,11 @@ public class AccountController {
         return new ResponseEntity<>(accounts,
                 HttpStatus.OK);
     }
+
+    @GetMapping(value = "/active")
+    ResponseEntity activeAccounts() {
+        List<Account> accounts = requestAccounts.getActiveAccounts();
+        return new ResponseEntity<>(accounts,
+                HttpStatus.OK);
+    }
 }
