@@ -21,13 +21,6 @@ public class AccountController {
         this.requestAccounts = requestAccounts;
     }
 
-    @GetMapping(value = "/hello")
-    ResponseEntity hello() {
-        List<Account> accounts = requestAccounts.getAccounts();
-        return new ResponseEntity<>(accounts,
-                HttpStatus.OK);
-    }
-
     @GetMapping(value = "/active")
     ResponseEntity activeAccounts() {
         List<Account> accounts = requestAccounts.getActiveAccounts();
@@ -44,11 +37,4 @@ public class AccountController {
                 HttpStatus.OK);
     }
 
-
-    @GetMapping(value = "/all")
-    ResponseEntity getAll() {
-        List<Account> accounts = requestAccounts.getAccounts();
-        return new ResponseEntity<>(accounts,
-                HttpStatus.OK);
-    }
 }

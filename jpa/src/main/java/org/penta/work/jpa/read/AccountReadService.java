@@ -2,7 +2,6 @@ package org.penta.work.jpa.read;
 
 import org.penta.work.boostrap.port.model.Account;
 import org.penta.work.boostrap.port.outgoing.AccountReader;
- import org.penta.work.jpa.dao.AccountDao;
 import org.penta.work.jpa.repository.AccountRepository;
 import org.penta.work.jpa.utils.DataUtil;
 

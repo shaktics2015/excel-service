@@ -1,8 +1,6 @@
-org/penta/work/jpa/config/JpaAdapterConfig.class
-org/penta/work/jpa/entity/DealEntity$DealEntityBuilder.class
-org/penta/work/jpa/dao/DealDao.class
-org/penta/work/jpa/read/ReadService.class
+org/penta/work/jpa/read/AccountReadService.class
+org/penta/work/jpa/config/JpaConfig.class
 org/penta/work/jpa/utils/DataUtil.class
-org/penta/work/jpa/DealRepository.class
-org/penta/work/jpa/entity/DealEntity.class
-org/penta/work/jpa/write/WriteService.class
+org/penta/work/jpa/repository/AccountRepository.class
+org/penta/work/jpa/write/AccountWriteService.class
+org/penta/work/jpa/entity/AccountEntity.class

@@ -7,10 +7,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-/*@SpringBootApplication //(scanBasePackages={  "org.penta.work"})
-//@PropertySource("classpath:application-h2.properties")
-//@EntityScan*/
-
 @SpringBootApplication
 @ComponentScan({"org.penta.work"})
 @EntityScan("org.penta.work.jpa.entity")
