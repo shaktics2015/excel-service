@@ -9,7 +9,12 @@ import java.math.BigDecimal;
 @Data
 public class Account {
 
+    private Long id;
+
     private long accountNo;
+
+    private String name;
+
     private BigDecimal accountBalance;
 
     public boolean withdrawAmount(BigDecimal withdrawalAmount) {

@@ -31,7 +31,7 @@ public class AccountController {
 
     @GetMapping(value = "/add")
     ResponseEntity add() {
-        Account account = Account.builder().accountNo(500).accountBalance(BigDecimal.valueOf(111L)).build();
+        Account account = Account.builder().name("Shakti").accountNo(500).accountBalance(BigDecimal.valueOf(111L)).build();
         boolean result = requestAccounts.addAccount(account);
         return new ResponseEntity<>(result,
                 HttpStatus.OK);

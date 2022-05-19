@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Table(name = "ACCOUNT")
 @Entity
@@ -19,5 +20,10 @@ public class AccountEntity {
     @Column(name= "ID")
     private Long id;
 
+    @Column(unique=true)
+    private long accountNo;
+
     private String name;
+
+    private BigDecimal accountBalance;
 }
