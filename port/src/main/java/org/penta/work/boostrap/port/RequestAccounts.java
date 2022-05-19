@@ -9,4 +9,5 @@ public interface RequestAccounts {
 
     Account getAccount(final long id);
     List<Account> getActiveAccounts();
+    boolean addAccount(Account account);
 }

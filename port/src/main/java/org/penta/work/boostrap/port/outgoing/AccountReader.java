@@ -7,4 +7,5 @@ import java.util.List;
 public interface AccountReader {
 
     List<Account> loadAccounts(Long accountNo);
+    List<Account> findAll();
 }

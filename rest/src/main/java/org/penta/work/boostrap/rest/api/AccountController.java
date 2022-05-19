@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -30,6 +31,23 @@ public class AccountController {
     @GetMapping(value = "/active")
     ResponseEntity activeAccounts() {
         List<Account> accounts = requestAccounts.getActiveAccounts();
+        return new ResponseEntity<>(accounts,
+                HttpStatus.OK);
+    }
+
+
+    @GetMapping(value = "/add")
+    ResponseEntity add() {
+        Account account = Account.builder().accountNo(500).accountBalance(BigDecimal.valueOf(111L)).build();
+        boolean result = requestAccounts.addAccount(account);
+        return new ResponseEntity<>(result,
+                HttpStatus.OK);
+    }
+
+
+    @GetMapping(value = "/all")
+    ResponseEntity getAll() {
+        List<Account> accounts = requestAccounts.getAccounts();
         return new ResponseEntity<>(accounts,
                 HttpStatus.OK);
     }
