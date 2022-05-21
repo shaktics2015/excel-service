@@ -8,9 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"org.penta.work"})
-@EntityScan("org.penta.work.jpa.entity")
-@EnableJpaRepositories("org.penta.work.jpa.repository")
+//@ComponentScan({"org.penta.work"})
 public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
