@@ -157,6 +157,6 @@ buildNumber.properties
 /web-app/plugins
 
 # "temporary" build files
-/target
-/app-boostrap/target
-
+app-boostrap/target
+target
+target/*
