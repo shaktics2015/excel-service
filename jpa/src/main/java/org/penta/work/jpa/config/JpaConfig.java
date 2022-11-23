@@ -1,10 +1,10 @@
 package org.penta.work.jpa.config;
 
-import org.penta.work.boostrap.port.incoming.AccountWriter;
-import org.penta.work.boostrap.port.outgoing.AccountReader;
-import org.penta.work.jpa.read.AccountReadService;
-import org.penta.work.jpa.repository.AccountRepository;
-import org.penta.work.jpa.write.AccountWriteService;
+import org.penta.work.boostrap.port.incoming.CatalogueWriter;
+import org.penta.work.boostrap.port.outgoing.CatalogueReader;
+import org.penta.work.jpa.read.CatalogueReadService;
+import org.penta.work.jpa.repository.ItemRepository;
+import org.penta.work.jpa.write.CatalogueWriteService;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -13,12 +13,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("org.penta.work.jpa.repository")
 public class JpaConfig {
     @Bean
-    public AccountReader getAccountReadService(AccountRepository repository) {
-        return new AccountReadService(repository);
+    public CatalogueReader getCatalogueReadService(ItemRepository repository) {
+        return new CatalogueReadService(repository);
     }
     @Bean
-    public AccountWriter getAccountWriteService(AccountRepository repository) {
-        return new AccountWriteService(repository);
+    public CatalogueWriter getCatalogueWriteService(ItemRepository repository) {
+        return new CatalogueWriteService(repository);
     }
 
 }

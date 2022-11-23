@@ -8,22 +8,22 @@ import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Table(name = "ACCOUNT")
+@Table(name = "CAT_ITEM")
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @DynamicUpdate
-public class AccountEntity {
+public class ItemEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name= "ID")
     private Long id;
 
-    @Column(unique=true)
-    private long accountNo;
+//    @Column(unique=true)
+    private Boolean veg;
 
     private String name;
 
-    private BigDecimal accountBalance;
+    private BigDecimal price;
 }

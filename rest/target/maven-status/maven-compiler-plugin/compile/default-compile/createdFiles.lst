@@ -1,1 +1,2 @@
-org/penta/work/boostrap/rest/api/AccountController.class
+org\penta\work\boostrap\rest\api\CatalogueController.class
+org\penta\work\boostrap\rest\exception\ExceptionHandler.class

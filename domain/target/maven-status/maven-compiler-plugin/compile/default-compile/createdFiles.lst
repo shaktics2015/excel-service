@@ -1,2 +1,2 @@
-org/penta/work/boostrap/domain/AccountDomain.class
-org/penta/work/boostrap/domain/AccountDomain$AccountDomainBuilder.class
+org\penta\work\boostrap\domain\CatalogueDomain.class
+org\penta\work\boostrap\domain\CatalogueDomain$CatalogueDomainBuilder.class

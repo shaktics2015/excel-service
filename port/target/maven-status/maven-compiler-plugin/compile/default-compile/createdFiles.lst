@@ -1,5 +1,5 @@
-org/penta/work/boostrap/port/incoming/AccountWriter.class
-org/penta/work/boostrap/port/RequestAccounts.class
-org/penta/work/boostrap/port/outgoing/AccountReader.class
-org/penta/work/boostrap/port/model/Account$AccountBuilder.class
-org/penta/work/boostrap/port/model/Account.class
+org\penta\work\boostrap\port\outgoing\CatalogueReader.class
+org\penta\work\boostrap\port\RequestCatalogue.class
+org\penta\work\boostrap\port\model\Item.class
+org\penta\work\boostrap\port\incoming\CatalogueWriter.class
+org\penta\work\boostrap\port\model\Item$ItemBuilder.class
